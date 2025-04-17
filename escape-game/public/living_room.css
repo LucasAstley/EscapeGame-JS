@@ -1,0 +1,73 @@
+canvas {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    border: 5px solid black;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    aspect-ratio: 16 / 9;
+    font-size: 8vw;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+}
+
+#drawer-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: #6d3d18;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 900;
+    display: none;
+    animation: popup-appear 0.3s ease-out;
+}
+
+.drawer-door {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-it-on-door {
+    width: 120px;
+    height: 120px;
+    background-color: #3ca435;
+    color: white;
+    padding: 10px;
+    transform: translate(-80%, 30%) rotate(-5deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 2em;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes popup-appear {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

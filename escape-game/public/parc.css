@@ -1,0 +1,163 @@
+/* game */
+
+.shovel {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 55%;
+    right: 50%;
+    background-image: url("assets/images/parc/pelle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.squirrel {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 3%;
+    right: 20%;
+    background-image: url("assets/images/parc/squirrel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+.squirrel:hover {
+    cursor: pointer;
+}
+
+.Sand-popup {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    top: 70%;
+    right: 20%;
+    z-index: 0;
+}
+
+.Sand-popup:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    opacity: 0.2;
+}
+
+.popup {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+    background-image: url("assets/images/parc/sable.png");
+    width: 75%;
+    height: 75%;
+    background-size: contain;
+    background-position: center;
+    border: 5px solid coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.close-popup {
+    cursor: pointer;
+    position: absolute;
+    top : 0;
+    right: 0;
+    border : none ;
+    background: none;
+    z-index: 3;
+}
+
+
+.Nuts {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    top: 3%;
+    right: 20%;
+    background-image: url("assets/images/parc/nuts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+
+}
+
+.pawn {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    top: 90%;
+    right: 70%;
+    background-image: url("assets/images/basement/pion.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+
+}
+
+.fake-Nuts > div {
+    background-image: url("assets/images/parc/nuts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/parc/sable.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.items-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.scratch-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    cursor: default;
+    opacity: 97% ;
+    top: 0;
+    left: 0;
+}
+
+
+.arrow {
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/images/parc/leftArrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1;
+    animation: pulse 2s infinite;
+    display: none; /* Caché par défaut */
+}
+

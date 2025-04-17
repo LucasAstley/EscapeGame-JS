@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Living Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="living_room.css">
+</head>
+<body>
+
+<div class="game">
+    <div class="game-window">
+        <canvas class="main"></canvas>
+        <div class="arrow"><p>&#8592;</p></div>
+
+        <div id="drawer-popup" style="display: none;">
+            <div class="drawer-door">
+                <div class="post-it-on-door">
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Grid-info">
+        <div class="timer" id="timer"></div>
+        <div class="Inventory"></div>
+        <div class="Annie"></div>
+    </div>
+</div>
+
+<script src="../src/block-page.js"></script>
+<script src="../src/game.js" type="module"></script>
+<script src="../src/ui.js" type="module"></script>
+<script src="../src/timer.js" type="module"></script>
+<script src="../src/hints.js" type="module"></script>
+<script type="module" src="../src/levels/level5.js"></script>
+</body>
+</html>

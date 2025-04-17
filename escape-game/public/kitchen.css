@@ -1,0 +1,96 @@
+canvas {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    border: 5px solid black;
+}
+
+.arrow {
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    transform: translate(50%, -50%);
+    width: 10%;
+    aspect-ratio: 16 / 9;
+    font-size: 8vw;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+}
+
+#post-it-popup {
+    position: fixed;
+    width: 300px;
+    padding: 20px;
+    background-color: #f85555;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    font-size: 18px;
+    color: white;
+    z-index: 1000;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: none;
+    animation: popup-appear 0.3s ease-out;
+}
+
+#post-it-popup a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes popup-appear {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+#drawer-popup {
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #936623;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 900;
+    display: none;
+    animation: popup-appear 0.3s ease-out;
+}
+
+.drawer-door {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-it-on-door {
+    width: 120px;
+    height: 120px;
+    background-color: #57aaf3;
+    color: white;
+    padding: 10px;
+    transform: translate(70%, -40%) rotate(5deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 2em;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

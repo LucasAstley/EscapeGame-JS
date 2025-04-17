@@ -1,0 +1,21 @@
+canvas {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    border: 5px solid black;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    aspect-ratio: 16 / 9;
+    font-size: 8vw;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+}

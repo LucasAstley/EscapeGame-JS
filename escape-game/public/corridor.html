@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Corridor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="corridor.css">
+</head>
+<body>
+    <div class="game">
+        <div class="game-window">
+            <canvas class="main"></canvas>
+            
+            <div id="padlock-popup" style="display: none;">
+                <div class="padlock-container">
+                    <h2>Cave verrouillée</h2>
+                    <div class="digit-container">
+                        <div class="digit red">
+                            <button class="up-button">▲</button>
+                            <span class="digit-value">1</span>
+                            <button class="down-button">▼</button>
+                        </div>
+                        <div class="digit blue">
+                            <button class="up-button">▲</button>
+                            <span class="digit-value">1</span>
+                            <button class="down-button">▼</button>
+                        </div>
+                        <div class="digit green">
+                            <button class="up-button">▲</button>
+                            <span class="digit-value">1</span>
+                            <button class="down-button">▼</button>
+                        </div>
+                    </div>
+                    <button id="validate-button">Valider</button>
+                    <button id="close-button">Fermer</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Grid-info">
+            <div class="timer" id="timer"></div>
+            <div class="Inventory"></div>
+            <div class="Annie"></div>
+        </div>
+    </div>
+
+    <script src="../src/block-page.js"></script>
+    <script src="../src/game.js" type="module"></script>
+    <script src="../src/ui.js" type="module"></script>
+    <script src="../src/timer.js" type="module"></script>
+    <script src="../src/hints.js" type="module"></script>
+    <script type="module" src="../src/levels/level2.js"></script>
+</body>
+</html>

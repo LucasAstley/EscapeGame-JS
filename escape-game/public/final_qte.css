@@ -1,0 +1,8 @@
+canvas {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    border: 5px solid black;
+}

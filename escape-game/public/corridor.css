@@ -1,0 +1,117 @@
+#padlock-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.padlock-container {
+    background: linear-gradient(145deg, #444, #222);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 350px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    border: 2px solid #555;
+    position: relative;
+}
+
+.padlock-container h2 {
+    color: #f0f0f0;
+    margin-top: 10px;
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.digit-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 25px 0;
+    background: #111;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.digit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 100px;
+    background: linear-gradient(145deg, #333, #222);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border: 1px solid #444;
+}
+
+.up-button, .down-button {
+    background: linear-gradient(145deg, #666, #444);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.up-button:hover, .down-button:hover {
+    background: linear-gradient(145deg, #777, #555);
+}
+
+.digit-value {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 8px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.red .digit-value {
+    color: #f85555;
+    text-shadow: 0 0 5px rgba(255, 85, 85, 0.5);
+}
+
+.blue .digit-value {
+    color: #57aaf3;
+    text-shadow: 0 0 5px rgba(87, 170, 243, 0.5);
+}
+
+.green .digit-value {
+    color: #3ca435;
+    text-shadow: 0 0 5px rgba(60, 164, 53, 0.5);
+}
+
+#validate-button, #close-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#validate-button {
+    background: linear-gradient(145deg, #3ca435, #2a8025);
+    color: white;
+    margin-right: 10px;
+}
+
+#close-button {
+    background: linear-gradient(145deg, #d33, #b22);
+    color: white;
+}

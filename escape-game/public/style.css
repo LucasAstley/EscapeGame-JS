@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #ff69b4; /* Hotpink */
+    --secondary-color: #000000; /* Black */
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.main {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80vw;
+    aspect-ratio: 16 / 9;
+    z-index: -1;
+}
+
+.game-window {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80vw;
+    aspect-ratio: 16 / 9;
+    z-index: -1;
+    border: 5px solid black;
+}
+
+.game {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+.Grid-info {
+    width: 18vw;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 1vw;
+    background-color: var(--primary-color);
+    margin-left: auto;
+    padding: 0.5vw;
+    height: calc(100vh - 4vw);
+
+}
+
+.timer,.Inventory , .Annie {
+    background-color: var(--primary-color);
+    filter: brightness(90%);
+    box-shadow: 0 0 10px black;
+    padding: 0.5vw;
+    min-height: 100px;
+}
+
+.Inventory {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3vw;
+
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+.Annie {
+    background-image: url("assets/images/parc/annie.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px black;
+    cursor: help;
+}
+.message {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 25%;
+    background-color: rgb(0 , 0 , 0 , 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.message-content {
+    font-size: 1.5vw;
+    color: white;
+    margin: 1vw;
+
+}
+
+.close-message {
+    cursor: pointer;
+    position: absolute;
+    top : 0;
+    right: 0;
+    border : none ;
+    background: none;
+}
+
+.inventory-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inventory-image-container {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.item-name {
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 0.2vw;
+}
+

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="parc.css">
+    <title>parc</title>
+</head>
+<body>
+    <div class="game">
+        <div class="game-window">
+            <canvas class= "main"></canvas>
+            <div class="squirrel"></div>
+            <div class ="shovel"></div>
+            <div class = "Sand-popup"></div>
+        </div>
+        <div class="Grid-info">
+            <div class="timer" id="timer"></div>
+            <div class="Inventory"></div>
+            <div class="Annie"></div>
+        </div>
+    </div>
+    <script src="../src/block-page.js"></script>
+    <script src="../src/game.js" type="module"></script>
+    <script src="../src/ui.js" type="module"></script>
+    <script src="../src/timer.js" type="module"></script>
+    <script src="../src/hints.js" type="module"></script>
+    <script src="../src/levels/level1.js" type="module"></script>
+</body>
+</html>
